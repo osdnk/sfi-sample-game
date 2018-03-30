@@ -53,7 +53,6 @@ class Game extends React.Component {
       })
     });
     this.index ++;
-    console.log(this.state)
     this.to = setTimeout(() => this.generateComponents(pitch * 0.95), pitch)
   }
 
@@ -65,7 +64,6 @@ class Game extends React.Component {
 
   render() {
     const { points, isStarted, startGame } = this.props;
-    console.log(isStarted);
     return (
       <View style={styles.container}>
         <Text style = {styles.points}>
