@@ -1,5 +1,5 @@
-export const startGame = () => ({
-  type: 'START',
+export const startGame = ({
+  type: 'TOGGLE_START',
 });
 
 export const toggleRed = ({
@@ -8,8 +8,4 @@ export const toggleRed = ({
 
 export const toggleGreen = ({
   type: 'TOGGLE_GREEN',
-});
-
-export const toggleBlack = ({
-  type: 'TOGGLE_BLACK',
 });

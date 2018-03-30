@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import reducer from './src/reducers'
-import Game from './src/components/Game';
+import GameContainer from './src/components/GameContainter';
 
 export default class App extends React.Component {
   render() {
@@ -11,7 +11,7 @@ export default class App extends React.Component {
     console.log(store);
     return (
       <Provider store={store}>
-        <Game/>
+        <GameContainer/>
       </Provider>
     );
   }
