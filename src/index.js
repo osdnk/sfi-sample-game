@@ -1,3 +1,3 @@
-import Game from './components/Game';
+import GameContainer from './components/GameContainter';
 
-export default Game
+export default GameContainer

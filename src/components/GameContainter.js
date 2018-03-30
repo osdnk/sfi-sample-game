@@ -1,31 +1,21 @@
 import React from 'react';
-import { Button, StyleSheet, Text, View, Alert } from 'react-native';;
+import { Alert } from 'react-native';
 import Game from './Game';
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import reducer from '../reducers'
 
 class GameContainer extends React.Component {
   render() {
+    const store = createStore(reducer);
     return (
-      <View style={styles.container}>
-        <View style={{
-          position: 'absolute',
-          width: '80%',
-          height: '80%'
-        }}>
+      <Provider store={store}>
         <Game
           onFinish={(points) => Alert.alert('Finished', `got ${points} points`)}
         />
-      </View>
-      </View>
+      </Provider>
     )
   }
 }
 
 export default GameContainer
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

@@ -1,7 +1,6 @@
 import React from 'react';
 import update from 'immutability-helper';
 import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { startGame, toggleBlack, toggleGreen, toggleRed } from '../actions/index';
 
