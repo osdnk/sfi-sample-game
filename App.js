@@ -1,5 +1,5 @@
 import React from 'react';
-import GameContainer from './src/components/GameContainter';
+import GameContainer from './src/components/GameContainer';
 
 
 export default class App extends React.Component {
