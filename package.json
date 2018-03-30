@@ -1,6 +1,6 @@
 {
+  "name": "sfi-sample-game",
   "main": "node_modules/expo/AppEntry.js",
-  "private": true,
   "version": "0.0.2",
   "dependencies": {
     "expo": "^26.0.0",
