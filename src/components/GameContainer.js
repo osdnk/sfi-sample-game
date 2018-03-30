@@ -11,7 +11,7 @@ class GameContainer extends React.Component {
     return (
       <Provider store={store}>
         <Game
-          onFinish={(points) => Alert.alert('Finished', `got ${points} points`)}
+          onFinish={this.props.onFinish}
         />
       </Provider>
     )
